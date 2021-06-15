@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     
-    private static final int ANSWER = 0;
+    private static final int LIMIT = 5;
+    private static final int ANSWER = 25;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while(true) {
+        for(int i = 0; i < LIMIT; i++) {
             try {
                 System.out.print("数字を入力してね：");
                 int num = Integer.parseInt(scanner.next());
@@ -30,5 +31,6 @@ public class Main {
                 System.out.println("整数の入力をお願いします");
             }
         }
+        System.out.println("残念（答え：" + ANSWER + ")");
     }
 }
