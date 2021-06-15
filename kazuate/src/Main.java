@@ -6,10 +6,12 @@ public class Main {
     private static final int ANSWER = 25;
 
     public static void main(String[] args) {
+        System.out.println("数当てゲーム（答えは2桁の正の数）");
+
         Scanner scanner = new Scanner(System.in);
         for(int i = 0; i < LIMIT; i++) {
             try {
-                System.out.print("数字を入力してね：");
+                System.out.print("\n数字を入力してね(" + (i + 1) + "/5)：");
                 int num = Integer.parseInt(scanner.next());
                 if(num == ANSWER) {
                     System.out.println("当たり！");
